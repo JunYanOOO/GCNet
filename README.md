@@ -87,29 +87,29 @@ Test in pycharm: If you want to test in pycharm, you can run it in test.py.
 see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
 
 ## Results on Cityscapes
-|     Method      |  FPS  | Params (M) | GFLOPs | ImageNet |                                            val                                             |
-|:---------------:|:-----:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|
-|    BiSeNetV1    | 116.8 |    13.3    | 118.0  | &#10003; |                                            74.4                                            |
-|    BiSeNetV2    | 132.4 |    3.4     |  98.4  | &#10007; |                                            73.6                                            |
-| DDRNet-23-Slim  | 166.4 |    5.7     |  36.3  | &#10007; | [76.3](https://drive.google.com/file/d/1x4vvs6RZdTosihTf6qTy2xbD5x5GThE9/view?usp=sharing) |
-|    DDRNet-23    | 106.0 |    20.3    | 143.0  | &#10007; | [78.0](https://drive.google.com/file/d/1cQt0kqzEgLXOg_arCO4Xn7O7aMOpFvbJ/view?usp=sharing) |
-|    PIDNet-S     | 128.7 |    7.7     |  47.3  | &#10007; | [76.4](https://drive.google.com/file/d/1SboDHBgL6gwFJuh3Jh_DLVeXA1L03DT9/view?usp=sharing) |
-|    PIDNet-M     | 78.2  |    28.7    | 177.0  | &#10007; | [78.2](https://drive.google.com/file/d/1GBigZvlMEBFG-yval93TEgn-GCHPDDH_/view?usp=sharing) |
-|    PIDNet-L     | 64.2  |    37.3    | 275.0  | &#10007; | [78.8](https://drive.google.com/file/d/11BX-QiA9sbNmJdF-3aH6Ux9yNp4jKwbX/view?usp=sharing) |
-| SCTNet-S-Seg50  | 169.1 |    4.6     |  7.1   | &#10007; |                                            71.0                                            |
-| SCTNet-S-Seg75  | 168.7 |    4.6     |  16.0  | &#10007; |                                            74.7                                            |
-| SCTNet-B-Seg50  | 162.6 |    17.4    |  28.1  | &#10007; |                                            75.0                                            |
-| SCTNet-B-Seg75  | 157.3 |    17.4    |  63.2  | &#10007; |                                            78.5                                            |
-| SCTNet-B-Seg100 | 117.0 |    17.4    | 112.3  | &#10007; |                                            79.0                                            |
-|    RDRNet-S     | 182.6 |    7.3     |  43.4  | &#10007; | [76.8](https://drive.google.com/file/d/14rr7XOCNlzCgpLMuVNLUTB39gIxkTBx3/view?usp=sharing) |
-|    RDRNet-M     | 102.8 |    26.0    | 162.0  | &#10007; | [78.8](https://drive.google.com/file/d/1dpn7cDdFG9qGbc65irFPUx1QTeTh3DqP/view?usp=sharing) |
-|    RDRNet-L     | 76.1  |    36.9    | 238.0  | &#10007; | [79.6](https://drive.google.com/file/d/1eyftoe0js4BGVXQEJgWmJ1NgUnjXhZnt/view?usp=sharing) |
-|     GCNet-S     | 193.3 |    9.2     |  45.2  | &#10007; | [76.9](https://drive.google.com/file/d/1KersBP95k3b0AELiYlQ1rk4PKUmN-ueu/view?usp=sharing) |
-|  GCNet-S (N=4)  | 193.3 |    9.2     |  45.2  | &#10007; |                                            77.3                                            |
-|     GCNet-M     | 105.0 |    34.2    | 178.0  | &#10007; | [79.0](https://drive.google.com/file/d/1sRaoMBirNeOlzV7DSJrML37k6Ypm4E7n/view?usp=sharing) |
-|     GCNet-L     | 88.0  |    45.2    | 232.0  | &#10007; | [79.6](https://drive.google.com/file/d/1FCQJB0kRni7PoMTkLOjzuPi9KI868XB6/view?usp=sharing) |
+|     Method      |      Resolution      |    FPS     | Params (M) | GFLOPs | ImageNet |                                            val                                             |
+|:---------------:|:--------------------:|:----------:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|
+|    BiSeNetV1    |  1024 &#10005; 2048  |   116.8    |    13.3    | 118.0  | &#10003; |                                            74.4                                            |
+|    BiSeNetV2    |  1024 &#10005; 2048  |   132.4    |    3.4     |  98.4  | &#10007; |                                            73.6                                            |
+| DDRNet-23-Slim  |  1024 &#10005; 2048  |   166.4    |    5.7     |  36.3  | &#10007; | [76.3](https://drive.google.com/file/d/1x4vvs6RZdTosihTf6qTy2xbD5x5GThE9/view?usp=sharing) |
+|    DDRNet-23    |  1024 &#10005; 2048  |   106.0    |    20.3    | 143.0  | &#10007; | [78.0](https://drive.google.com/file/d/1cQt0kqzEgLXOg_arCO4Xn7O7aMOpFvbJ/view?usp=sharing) |
+|    PIDNet-S     |  1024 &#10005; 2048  |   128.7    |    7.7     |  47.3  | &#10007; | [76.4](https://drive.google.com/file/d/1SboDHBgL6gwFJuh3Jh_DLVeXA1L03DT9/view?usp=sharing) |
+|    PIDNet-M     |  1024 &#10005; 2048  |    78.2    |    28.7    | 177.0  | &#10007; | [78.2](https://drive.google.com/file/d/1GBigZvlMEBFG-yval93TEgn-GCHPDDH_/view?usp=sharing) |
+|    PIDNet-L     |  1024 &#10005; 2048  |    64.2    |    37.3    | 275.0  | &#10007; | [78.8](https://drive.google.com/file/d/11BX-QiA9sbNmJdF-3aH6Ux9yNp4jKwbX/view?usp=sharing) |
+| SCTNet-S-Seg50  |  512 &#10005; 1024   |   169.1    |    4.6     |  7.1   | &#10007; |                                            71.0                                            |
+| SCTNet-S-Seg75  |  768 &#10005; 1536   |   168.7    |    4.6     |  16.0  | &#10007; |                                            74.7                                            |
+| SCTNet-B-Seg50  |  512 &#10005; 1024   |   162.6    |    17.4    |  28.1  | &#10007; |                                            75.0                                            |
+| SCTNet-B-Seg75  |  768 &#10005; 1536   |   157.3    |    17.4    |  63.2  | &#10007; |                                            78.5                                            |
+| SCTNet-B-Seg100 |  1024 &#10005; 2048  |   117.0    |    17.4    | 112.3  | &#10007; |                                            79.0                                            |
+|    RDRNet-S     |  1024 &#10005; 2048  |   182.6    |    7.3     |  43.4  | &#10007; | [76.8](https://drive.google.com/file/d/14rr7XOCNlzCgpLMuVNLUTB39gIxkTBx3/view?usp=sharing) |
+|    RDRNet-M     |  1024 &#10005; 2048  |   102.8    |    26.0    | 162.0  | &#10007; | [78.8](https://drive.google.com/file/d/1dpn7cDdFG9qGbc65irFPUx1QTeTh3DqP/view?usp=sharing) |
+|    RDRNet-L     |  1024 &#10005; 2048  |    76.1    |    36.9    | 238.0  | &#10007; | [79.6](https://drive.google.com/file/d/1eyftoe0js4BGVXQEJgWmJ1NgUnjXhZnt/view?usp=sharing) |
+|     GCNet-S     |  1024 &#10005; 2048  |   193.3    |    9.2     |  45.2  | &#10007; | [76.9](https://drive.google.com/file/d/1KersBP95k3b0AELiYlQ1rk4PKUmN-ueu/view?usp=sharing) |
+|  GCNet-S (N=4)  |  1024 &#10005; 2048  |   193.3    |    9.2     |  45.2  | &#10007; |                                            77.3                                            |
+|     GCNet-M     |  1024 &#10005; 2048  |   105.0    |    34.2    | 178.0  | &#10007; | [79.0](https://drive.google.com/file/d/1sRaoMBirNeOlzV7DSJrML37k6Ypm4E7n/view?usp=sharing) |
+|     GCNet-L     |  1024 &#10005; 2048  |    88.0    |    45.2    | 232.0  | &#10007; | [79.6](https://drive.google.com/file/d/1FCQJB0kRni7PoMTkLOjzuPi9KI868XB6/view?usp=sharing) |
 
-When performing inference on A100, the image resolution used was 1024 &#10005; 2048. In the table, GCNet defaults to setting N to 2.
+The GPU used for benchmarking is the A100, and GCNet defaults to setting N to 2.
 
 
 # Citations
