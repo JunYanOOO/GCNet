@@ -13,7 +13,6 @@ Guoyu Yang, Yuan Wang, Daming Shi*, Yanzhong Wang
 
 * **2025/02/27**: CVPR 2025 Accepted.
 
-
 # <img src="figures/golden_cudgel_(Image_is_from_Black_Myth_Wukong).png" style="width: 1.1em; height: 1.1em;"> Golden Cudgel Network
 
 ## Abstract
