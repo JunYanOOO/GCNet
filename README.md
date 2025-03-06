@@ -1,18 +1,33 @@
-# Golden Cudgel Network for Real-Time Semantic Segmentation ([arXiv]())
+<div style="text-align: center;">
 
-By Guoyu Yang, Yuan Wang, Daming Shi*, Yanzhong Wang
+# Golden Cudgel Network for Real-Time Semantic Segmentation
 
-This project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
+Guoyu Yang, Yuan Wang, Daming Shi*, Yanzhong Wang
+
+<a href='http://arxiv.org/abs/2503.03325'><img src='https://img.shields.io/badge/arXiv-2501.04440-brown.svg?logo=arxiv&logoColor=white'></a>
+
+</div>
 
 
-# Golden Cudgel Network
+# 🔥 What's New
+
+* **2025/02/27**: CVPR 2025 Accepted.
+
+
+# <img src="C:\Users\杨国煜\Downloads\【哲风壁纸】场景-奇幻-悟空 (1) (1).png" alt="Golden Cudgel Icon" style="width: 1em; height: 1em;"> Golden Cudgel Network
+
+## Abstract
+Recent real-time semantic segmentation models, whether single-branch or multi-branch, achieve good performance and speed. However, their speed is limited by multi-path blocks, and some depend on high-performance teacher models for training. To overcome these issues, we propose Golden Cudgel Network (GCNet). Specifically, GCNet uses vertical multi-convolutions and horizontal multi-paths for training, which are reparameterized into a single convolution for inference, optimizing both performance and speed. This design allows GCNet to self-enlarge during training and self-contract during inference, effectively becoming a "teacher model" without needing external ones. Experimental results show that GCNet outperforms existing state-of-the-art models in terms of performance and speed on the Cityscapes, CamVid, and Pascal VOC 2012 datasets.
+
+## Architecture
 
 <p align="center">
   <img src="figures/gcnet.png" alt="overview-of-our-method" width="100%"/></br>
 </p>
 The overall architecture of GCNet. After feature flow into two branches, the upper branch corresponds to the semantic branch, while the lower branch corresponds to the detail branch. The orange box indicates that the first block within the GCBlocks has a stride of 2, while the remaining blocks have a stride of 1. The green box signifies that all GCBlocks maintain a stride of 1.
 
-# Experiment
+
+# 🛠️ Experiment
 
 ## Environment
 ```
@@ -61,7 +76,6 @@ Cityscapes could be downloaded from [here](https://www.cityscapes-dataset.com/do
 Camvid could be downloaded from [here](https://drive.google.com/file/d/1H69xFbUr_FGUhIU1iWbYpIDyD1EIOJGl/view?usp=sharing). 
 Pascal VOC 2012 could be downloaded from [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar). 
 
-
 ## Training
 Single gpu for train:
 ```shell
@@ -86,7 +100,8 @@ Test in pycharm: If you want to test in pycharm, you can run it in test.py.
 
 see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
 
-## Results on Cityscapes
+
+# ⚡ Results on Cityscapes
 |     Method      |      Resolution      |    FPS     | Params (M) | GFLOPs | ImageNet |                                            val                                             |
 |:---------------:|:--------------------:|:----------:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|
 |    BiSeNetV1    |  1024 &#10005; 2048  |   116.8    |    13.3    | 118.0  | &#10003; |                                            74.4                                            |
@@ -105,16 +120,24 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 |    RDRNet-M     |  1024 &#10005; 2048  |   102.8    |    26.0    | 162.0  | &#10007; | [78.8](https://drive.google.com/file/d/1dpn7cDdFG9qGbc65irFPUx1QTeTh3DqP/view?usp=sharing) |
 |    RDRNet-L     |  1024 &#10005; 2048  |    76.1    |    36.9    | 238.0  | &#10007; | [79.6](https://drive.google.com/file/d/1eyftoe0js4BGVXQEJgWmJ1NgUnjXhZnt/view?usp=sharing) |
 |     GCNet-S     |  1024 &#10005; 2048  |   193.3    |    9.2     |  45.2  | &#10007; | [76.9](https://drive.google.com/file/d/1KersBP95k3b0AELiYlQ1rk4PKUmN-ueu/view?usp=sharing) |
-|  GCNet-S (N=4)  |  1024 &#10005; 2048  |   193.3    |    9.2     |  45.2  | &#10007; |                                            77.3                                            |
-|     GCNet-M     |  1024 &#10005; 2048  |   105.0    |    34.2    | 178.0  | &#10007; | [79.0](https://drive.google.com/file/d/1sRaoMBirNeOlzV7DSJrML37k6Ypm4E7n/view?usp=sharing) |
+|  GCNet-S (N=3)  |  1024 &#10005; 2048  |   193.3    |    9.2     |  45.2  | &#10007; |                                            77.3                                            |
+|     GCNet-M     |  1024 &#10005; 2048  |   105.0    |    34.2    | 178.0  | &#10007; | [78.9](https://drive.google.com/file/d/1sRaoMBirNeOlzV7DSJrML37k6Ypm4E7n/view?usp=sharing) |
 |     GCNet-L     |  1024 &#10005; 2048  |    88.0    |    45.2    | 232.0  | &#10007; | [79.6](https://drive.google.com/file/d/1FCQJB0kRni7PoMTkLOjzuPi9KI868XB6/view?usp=sharing) |
 
 The GPU used for benchmarking is the A100, and GCNet defaults to setting N to 2.
 
 
-# Citations
+# 📑 Citations
 
 If you find GCNet useful in your research, please consider citing:
 ```
-
+@misc{yang2025goldencudgel,
+      title={Golden Cudgel Network for Real-Time Semantic Segmentation}, 
+      author={Guoyu Yang and Yuan Wang and Daming Shi and Yanzhong Wang},
+      year={2025},
+      eprint={2503.03325},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.03325}, 
+}
 ```
