@@ -1,4 +1,4 @@
-<p align="center">
+
 
 # Golden Cudgel Network for Real-Time Semantic Segmentation
 
@@ -6,7 +6,6 @@ Guoyu Yang, Yuan Wang, Daming Shi*, Yanzhong Wang
 
 <a href='http://arxiv.org/abs/2503.03325'><img src='https://img.shields.io/badge/arXiv-2503.03325-brown.svg?logo=arxiv&logoColor=white'></a>
 
-</p>
 
 
 # 🔥 What's New
