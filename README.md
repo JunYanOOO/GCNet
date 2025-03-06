@@ -14,7 +14,7 @@ Guoyu Yang, Yuan Wang, Daming Shi*, Yanzhong Wang
 * **2025/02/27**: CVPR 2025 Accepted.
 
 
-# <img src="figures/golden_cudgel_(Image_is_from_Black_Myth_Wukong).png" style="width: 1.1em; height: 1.1em;"> 
+# <img src="figures/golden_cudgel_(Image_is_from_Black_Myth_Wukong).png" style="width: 35px; height: 35px;"> Golden Cudgel Network
 
 ## Abstract
 Recent real-time semantic segmentation models, whether single-branch or multi-branch, achieve good performance and speed. However, their speed is limited by multi-path blocks, and some depend on high-performance teacher models for training. To overcome these issues, we propose Golden Cudgel Network (GCNet). Specifically, GCNet uses vertical multi-convolutions and horizontal multi-paths for training, which are reparameterized into a single convolution for inference, optimizing both performance and speed. This design allows GCNet to self-enlarge during training and self-contract during inference, effectively becoming a "teacher model" without needing external ones. Experimental results show that GCNet outperforms existing state-of-the-art models in terms of performance and speed on the Cityscapes, CamVid, and Pascal VOC 2012 datasets.
